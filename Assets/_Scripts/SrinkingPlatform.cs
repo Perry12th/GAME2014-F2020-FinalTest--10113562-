@@ -37,7 +37,7 @@ public class SrinkingPlatform : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Player"))
         {
@@ -46,7 +46,7 @@ public class SrinkingPlatform : MonoBehaviour
         }
     }
 
-    void OnCollisionExit2D(Collision2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
